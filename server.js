@@ -27,10 +27,8 @@ app.post("/sum", (req, res)=>{
 
 const list=[];
 app.post("/list", (req, res)=>{
-
     const listText= req.body.text;
     list.push(listText);
-
     res.json({list: list})
 })
 
